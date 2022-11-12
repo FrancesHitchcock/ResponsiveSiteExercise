@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #2f3e46;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    background-color: #ddd;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+}
+
+
+/* layout */
+
+header, footer{
+    background-color: #354f52;
+    color: #ddd;
+}
+
+header{
+    padding: 2em 0 1em 0;
+}
+
+main{
+    background-color: #cad2c5;
+    padding: 2em 0;
+}
+
+footer{
+    font-size: .85rem;
+    font-weight: 700;
+    padding: 3em;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-img{
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.gallery-image-container{
+    /* flex-basis: 250px;
+    flex-grow: 1; */
+    flex: 1 250px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gallery-image{
+    order: -1;
+}
+
+/* navigation and links */
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+nav a{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.125rem;
+    padding: .5em;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #84a98c;
+}
+
+nav a:active{
+    color: #52796f;
+}
+
+.btn-container{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding-top: .8em;
+}
+
+.btn{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: .8em 1.6em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+.btn-light{
+    background-color: #84a98c;
+    color: #2f3e46;
+    
+}
+
+.btn-light:hover,
+.btn-light:focus{
+    background-image: linear-gradient(#95B69C, #6A9874);
+}
+
+.btn-light:active{
+    background-image: linear-gradient(#6A9874, #95B69C);
+}
+
+.btn-dark{
+    background-color: #52796f;
+    color: #ddd;
+}
+
+.btn-dark:hover,
+.btn-dark:focus{
+    background-image: linear-gradient(#649388, #476860);
+}
+
+.btn-dark:active{
+    background-image: linear-gradient(#476860, #649388);
+}
+
+/* typography */
+
+h1{
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.h2-wide-top{
+    margin-top: 1;
+}
+
+p{
+    line-height: 1.5;
+    margin: .75em 0;
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.strapline{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    letter-spacing: .05em;
+    margin: 0;
+}
+
+.caption-main, .gallery-image-heading{
+    display: block;
+    font-size: .9rem;
+    margin-top: .5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: right;
+}
+
+.italianno-font{
+    font-family: 'Italianno', cursive;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.gallery-image-heading{
+    margin-bottom: .5em;
+}
+
+.gallery-image-info{
+    margin: 0 0 .5em 0;
+}
+
+@media(max-width: 767px){
+    nav, header{
+        text-align: center;
+    }
+
+    nav a{
+        border-top: 1px dotted #ddd;
+    }
+
+    nav a:last-child{
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .btn-container{
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        padding: 3em 0;
+    }
+
+    footer{
+        padding: 4em;
+    }
+
+    main{
+        padding: 3em 0;
+    }
+
+    section{
+        padding-bottom: .5em;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .strapline{
+        letter-spacing: .1em;
+   
+    }
+
+    .gallery-image-heading{
+        margin-bottom: .65em;
+    }
+
+    .gallery-image-info{
+        margin-bottom: 1.5em;
+    }
+
+    .container-header, nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a{
+        padding: 1em;
+    }
+    nav a:last-child{
+        padding-right: 0;
+    }
+
+    .main-img{
+        max-height: 250px;
+    }
+
+    .btn-section{
+        padding: 1.5em 0 1em 0;
+    }
+
+    .btn-container{
+        padding-top: 0;
+    }
+}
