@@ -18,3 +18,9 @@ In addition, the site incorporates accessibility features including semantic htm
 The colour scheme was inspired by a coolors.co palette.
 
 Frances Hitchcock, 12 November 2022
+
+## First Revision
+
+An additional breakpoint was introduced at a min-width of 400px to allow the page to display optimally on smaller mobiles.
+
+Frances Hitchcock, 13 November 2022
