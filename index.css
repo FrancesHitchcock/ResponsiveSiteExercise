@@ -21,7 +21,7 @@ header, footer{
 }
 
 header{
-    padding: 2em 0 1em 0;
+    padding: 1em 0 .5em 0;
 }
 
 main{
@@ -215,6 +215,10 @@ p{
 }
 
 @media(min-width: 400px){
+    header{
+        padding: 2em 0 1em 0;
+    }
+
     h1{
         font-size: 3.5rem;
     }
